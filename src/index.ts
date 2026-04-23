@@ -10,7 +10,7 @@ async function main() {
     process.stdout.write(JSON.stringify(result, null, 2) + "\n");
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    console.error(error);
+    console.error(message);
     process.exit(1);
   }
 }
